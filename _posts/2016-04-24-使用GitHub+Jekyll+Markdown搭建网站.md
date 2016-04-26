@@ -1,7 +1,9 @@
 ---
 title: 使用GitHub + Jekyll + Markdown搭建网站
+author: hao.huang
+layout: post
 categories: 学习资料
-tags: GitHub, Jekyll, Markdown
+tags: GitHub Jekyll Markdown
 ---
 
 ## 简介
