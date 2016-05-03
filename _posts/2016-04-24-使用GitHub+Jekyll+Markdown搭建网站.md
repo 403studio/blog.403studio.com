@@ -1,7 +1,5 @@
 ---
 title: 使用GitHub + Jekyll + Markdown搭建网站
-author: hao.huang
-layout: post
 categories: 学习资料
 tags: GitHub Jekyll Markdown
 ---
@@ -25,6 +23,16 @@ GitHub内置了Jekyll环境，开发者可以通过使用非常便捷的Markdown
 ## Jekyll
 
 [Jekyll](https://jekyllrb.com/)能够把普通的文本转换为静态的网站和博客，让你真正需要做的事就是关注内容本身。对于轻博客或者项目文档来说这种静态网站生成工具是非常不错的选择。Jekyll + disqus是非常不错的搭档组合，disqus为网站添加评论功能。
+
+### Jekyll安装
+
+在官方文档上面有安装介绍
+
+1. Ruby安装，`yum install ruby`
+2. RubyGems安装，`yum install rubygems`
+3. NodeJS安装，`yum install nodejs yum install npm`
+4. 使用RubyGems安装Jekyll，`gem install jekyll`，在CentOS系统中如果报错`mkmf.rb can't find header files for ruby at /usr/lib/ruby/ruby.h
+`可以试试安装ruby-devel来解决问题
 
 ## Markdown
 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它具有非常简单的语法，简单到只有有限的几个常用标记标签。国内非常著名的时候Markdown的案例是[简书](http://www.jianshu.com/)，简书就支持Markdown语法撰写文章。

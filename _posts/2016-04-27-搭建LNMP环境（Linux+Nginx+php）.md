@@ -43,7 +43,7 @@ sudo make install
 
 ```
 cp php.ini-development /usr/local/php/etc/php.ini 
-cp /usr/local/php/etc/php-fpm.conf.default /usr/local/etc/php-fpm.conf
+cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf
 编辑php-fpm.conf将用户和组修改成www
 ```
 
@@ -178,7 +178,7 @@ sudo /etc/nginx/nginx
 
 * `configure: error: xml2-config not found. Please check your libxml2 installat`
 
-根据提示我们安装libxml2`sudo agt-get install libxml2`，重新编译发现问题依然存在，google一下发现我们还需要安装libxml2-dev `sudo agt-get install libxml2-dev`
+根据提示我们安装libxml2`sudo agt-get install libxml2`，重新编译发现问题依然存在，google一下发现我们还需要安装libxml2-dev `sudo agt-get install libxml2-dev`，在CentOS系统里`yum install libxml2-devel`
 
 * `configure: error: Cannot find OpenSSL's <evp.h>`
 根据提示我们安装openssl libcurl4-openssl libssl-dev即可
