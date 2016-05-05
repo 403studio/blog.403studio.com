@@ -33,6 +33,10 @@ GitHub内置了Jekyll环境，开发者可以通过使用非常便捷的Markdown
 3. NodeJS安装，`yum install nodejs yum install npm`
 4. 使用RubyGems安装Jekyll，`gem install jekyll`，在CentOS系统中如果报错`mkmf.rb can't find header files for ruby at /usr/lib/ruby/ruby.h
 `可以试试安装ruby-devel来解决问题
+5. 启动，进入相应的目录并启动Jekyll服务 `jekyll serve --detach`
+6. 停止，`kill -9 PID`
+
+**注意：**本人在CentOS上根据官方文档使用`gem install jekyll`的时候，提示报错***ruby版本较低，需要升级ruby的版本***，这个是由于使用yum的ruby版本导致的，yum上的软件版本很多时候低于官方的发布版本。可以先卸载已安装的ruby`yum remove ruby`然后直接去ruby上下载源码包安装即可。
 
 ## Markdown
 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它具有非常简单的语法，简单到只有有限的几个常用标记标签。国内非常著名的时候Markdown的案例是[简书](http://www.jianshu.com/)，简书就支持Markdown语法撰写文章。
