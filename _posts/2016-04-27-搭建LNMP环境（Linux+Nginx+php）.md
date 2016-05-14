@@ -1,7 +1,7 @@
 ---
 title: 搭建LNMP环境（Linux+Nginx+PHP）
 categories: 学习资料
-tags: Linux, Nginx, PHP
+tags: Linux Nginx PHP
 ---
 
 ## 环境说明
