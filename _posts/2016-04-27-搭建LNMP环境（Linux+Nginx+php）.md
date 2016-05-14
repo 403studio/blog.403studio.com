@@ -172,7 +172,7 @@ sudo /etc/nginx/nginx
 
 根据自己的需要进行配置安装，为了让PHP支持php-fpm，需要添加`--enable-fpm`，相关信息可以参考官方文档[Unix系统下的Nginx](http://php.net/manual/zh/install.unix.nginx.php)
 
-###PHP安装可能遇到的问题，基本上所有的问题我们都可以在网络上找到答案
+### PHP安装可能遇到的问题，基本上所有的问题我们都可以在网络上找到答案
 
 根据自己的需求我们在PHP的安装过程中会添加一些模块依赖等，如果有些模块或者软件没有在你的系统安装可能会出现编译错误。编者自己使用的环境以及上文提到的配置出现了一下问题：
 
@@ -182,3 +182,22 @@ sudo /etc/nginx/nginx
 
 * `configure: error: Cannot find OpenSSL's <evp.h>`
 根据提示我们安装openssl libcurl4-openssl libssl-dev即可
+
+### Nginx和XAMMP共存问题
+
+因为Nginx和Apache都是使用的80端口，所以如果要两者同时使用那么我们就需要将XAMPP的Apahce端口修改掉（这里将修改成8888）。我们找到对应的httpd.conf修改port为8888，使用`/opt/lampp restart`发现Apahce仍然启动不了报错`xampp another web server is already running`
+
+这个地方很明显要么是我们的8888端口已经被占用或者是Apache的启动脚本有问题，很快的就排除了端口占用这个原因。那么我们找寻启动脚本`lampp`,发现还真是有检查80端口的脚本，在function startApahce我们需要将检查的端口号修改成8888即可
+```
+function startApache() {
+	....
+	....
+	
+	if testport 8888
+	then
+		$GETTEXT -s "fail."
+		echo "XAMPP: " $($GETTEXT 'Another web server is already running.')
+		return 1
+	fi
+
+```
