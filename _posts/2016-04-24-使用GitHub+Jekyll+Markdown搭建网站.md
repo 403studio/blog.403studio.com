@@ -38,6 +38,9 @@ GitHub内置了Jekyll环境，开发者可以通过使用非常便捷的Markdown
 
 **注意：**本人在CentOS上根据官方文档使用`gem install jekyll`的时候，提示报错***ruby版本较低，需要升级ruby的版本***，这个是由于使用yum的ruby版本导致的，yum上的软件版本很多时候低于官方的发布版本。可以先卸载已安装的ruby`yum remove ruby`然后直接去ruby上下载源码包安装即可。
 
+jekyll启动服务如果使用`jekyll serve --detach`在现有版本下不会打开监听及在文件有更新的时候不会自动重建，但是如果不打开--detach，那么程序又一直在输出。特别是当你使用ssh连接的时候，连接断开那么服务业跟着断了。这个时候可以使用`nohup jekyll serve
+`关于nohup可以google了解
+
 ## Markdown
 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它具有非常简单的语法，简单到只有有限的几个常用标记标签。国内非常著名的时候Markdown的案例是[简书](http://www.jianshu.com/)，简书就支持Markdown语法撰写文章。
 
