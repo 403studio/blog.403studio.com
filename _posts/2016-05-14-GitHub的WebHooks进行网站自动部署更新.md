@@ -2,6 +2,7 @@
 title: GitHub的Webhooks进行网站自动部署更新
 categories: 学习资料
 tags: GitHub Webhooks
+excerpt： 使用GitHub的Webhooks工具结合服务器端的shell进行网站的自动部署更新
 ---
 
 ## Webhooks
