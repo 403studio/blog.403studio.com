@@ -49,6 +49,7 @@ npm install -save github-webhook-handler
 npm install -g forever
 ```
 准备好工作目录后，就可以编写处理响应代码了index.js
+
 ```javascript
 var http = require('http');
 var spawn = require('child_process').spawn;
