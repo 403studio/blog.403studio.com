@@ -1,5 +1,5 @@
 <h3>最近文章</h3>
-<ul>
+<ul class="list-unstyled">
 	{% for post in site.posts limit:10 %}
 		<li><a href="{{ post.url }}" {% if page.title == post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
 	{% endfor %}
