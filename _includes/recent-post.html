@@ -1,7 +1,7 @@
 <h3>最近文章</h3>
 <ul>
-	{% for post in site.posts limit:10 %}
-		<li><a href="{% post.url %}" {% if page.title == post.title %} class="active" {% endif %}>{% post.title %}</a></li>
+	{% for blog in site.posts limit:10 %}
+		<li><a href="{% blog.url %}" {% if page.title == blog.title %} class="active" {% endif %}>{% blog.title %}</a></li>
 	{% endfor %}
 	<li><a href="http://blog.403studio.com">查看所有文章</a></li>
 </ul>
