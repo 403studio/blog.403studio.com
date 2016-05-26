@@ -17,6 +17,9 @@ layout: default
                 {% endfor %}
             {% endif %}
         </p>
+        {% if page.source %}
+            <p class="post-meta"><em>原文出处:</em><a href="{{ page.source }}" target="_blank">{{ page.source }}</a></p>
+        {% endif %}
     </header>
 
     <div class="post-content" itemprop="articleBody">

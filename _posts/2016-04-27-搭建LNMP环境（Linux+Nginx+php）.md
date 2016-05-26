@@ -59,6 +59,7 @@ php-fpm重启`kill -USR2 'cat /usr/local/php/var/run/php-fpm.pid'`
 * 配置nginx使其支持PHP应用
 
 根据上文的Nginx安装配置文件处于/usr/etc/nginx/nginx.conf，编辑配置文件使其对于.php文件的请求被传送到后端的PHP-FPM模块
+
 ```
 location ~* \.php$ {
     fastcgi_index   index.php;
