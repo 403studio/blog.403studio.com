@@ -26,3 +26,7 @@ defaults:
    layout: "post"
    author: "hao.huang"
    navid: "blog"
+ -
+  scope:
+    path: "react-example"
+    type: "page"
