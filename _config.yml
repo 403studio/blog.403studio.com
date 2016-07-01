@@ -31,5 +31,6 @@ defaults:
    path: "react-example"
    type: "pages"
   values:
-   layout: "post"
+   layout: "project"
    author: "hao.huang"
+   git: "https://github.com/403studio/react-example"
