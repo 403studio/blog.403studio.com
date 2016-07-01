@@ -59,7 +59,7 @@ npm install -g babel
 
 ## 相关资源
 
-[本实例Git][https://github.com/403studio/react-example]
+[本实例Git](https://github.com/403studio/react-example)
 
 [React 官网][React]
 
