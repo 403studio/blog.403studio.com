@@ -1,36 +1,6 @@
-- title: 快速开始
+- project: react-example
   items:
-  - id: what-is-npm
-    title: 01-npm是什么?
-  - id: installing-node
-    title: 02-安装Node.js，更新npm
-  - id: fixing-npm-permissions
-    title: 03-npm权限修复
-  - id: installing-npm-packages-locally
-    title: 04-本地安装npm包
-  - id: using-a-package.json
-    title: 05-使用package.json
-  - id: updating-local-packages
-    title: 06-更行本地locally包
-  - id: uninstalling-local-packages
-    title: 07-卸载本地locally包
-  - id: installing-npm-packages-globally
-    title: 08-安装全局globally包
-  - id: updating-global-packages
-    title: 09-更新全局globally包
-  - id: uninstalling-global-packages
-    title: 10-卸载全局globally包
-  - id: creating-node-modules
-    title: 11-创建Node.js模块
-  - id: publishing-npm-packages
-    title: 12-发布npm包
-  - id: semantic-versioning
-    title: 13-语义版本和npm
-  - id: scoped-packages
-    title: 14-使用scoped packages
-  - id: using-tags
-    title: 15-使用tags标签
-- title: npm怎么工作
-  items:
-  - id: packages
-    title: 01-包以及模块
+  - link: index
+    title: React实例说明和前期准备
+  - link: React实例——使用React搭建订单页面Lesson01功能模块划分
+    title: 01-使用React搭建订单页面功能模块划分

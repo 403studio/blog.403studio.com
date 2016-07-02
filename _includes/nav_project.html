@@ -1,9 +1,9 @@
 {% for section in site.data.nav_project %}
 	<div class="nav-docs-section">
-		<h3>{{ section.title }}</h3>
+		<h3>{{ section.project }}</h3>
 		<ul>
 			{% for item in section.items %}
-				<li><a {% if page.id == item.id %} class="text-success" {% endif %} href="/npms/{{ item.id }}">{{ item.title }}</a></li>
+				<li><a {% if page.title == item.link %} class="text-success" {% endif %} href="/{{ section.project }}/{{ item.link }}">{{ item.title }}</a></li>
 			{% endfor %}
 		</ul>
 	</div>
