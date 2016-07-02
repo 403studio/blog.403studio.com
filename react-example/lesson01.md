@@ -1,6 +1,6 @@
 ---
 title: React实例——使用React搭建订单页面Lesson01功能模块划分
-permalink: lesson01
+link: lesson01
 date: 2016-07-02
 project: react-example
 git: https://github.com/403studio/react-example/lesson01/

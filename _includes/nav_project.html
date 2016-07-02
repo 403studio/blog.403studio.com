@@ -4,7 +4,7 @@
 			<h3>{{ section.title }}</h3>
 			<ul>
 				{% for item in section.items %}
-					<li><a {% if page.permalink == item.link %} class="text-success" {% endif %} href="/{{ section.project }}/{{ item.link }}">{{ item.title }}</a></li>
+					<li><a {% if page.link == item.link %} class="text-success" {% endif %} href="/{{ section.project }}/{{ item.link }}">{{ item.title }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
