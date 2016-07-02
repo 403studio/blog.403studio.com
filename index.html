@@ -8,10 +8,10 @@ layout: default
     {% for post in site.posts %}
         <article>
             <div class="article-meta">
-                <span class="fa fa-book"> <a href="#">{{ post.category }}</a></span>
+                <span class="fa fa-book"> <a href="#">{{ post.categories }}</a></span>
                 <span class="fa fa-calendar"> {{ post.date | date: "%Y-%m-%d" }}</span>
             </div>
-            <h1><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h1>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h2>
             <div class="article-flag">
                 {% if post.tags %}
                     <span class="fa fa-tags"></span>
