@@ -4,26 +4,28 @@ layout: default
 <div class="col-md-3">
     {% include recent-post.html %}
 </div>
-<article class="post col-md-9" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-            {% if page.author %} <em>By:</em><author class="bg-danger">{{ page.author }}</author>{% endif %}
-            {% if page.tags %}
-                <em>标签:</em>
-                {% for tag in page.tags %}
-                    <span class="bg-info">{{tag}}</span>
-                {% endfor %}
+<div class="col-md-9" id="article-post">
+    <article class="post col-md-12" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p class="article-flag post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                <!-- {% if page.author %} <em>By:</em><author class="bg-danger">{{ page.author }}</author>{% endif %} -->
+                {% if page.tags %}
+                    <span class="fa fa-tags"> </span> 
+                    {% for tag in page.tags %}
+                        <a href="#">{{tag}}</a>
+                    {% endfor %}
+                {% endif %}
+            </p>
+            {% if page.source %}
+                <p class="post-meta"><em>原文出处:</em><a href="{{ page.source }}" target="_blank">{{ page.source }}</a></p>
             {% endif %}
-        </p>
-        {% if page.source %}
-            <p class="post-meta"><em>原文出处:</em><a href="{{ page.source }}" target="_blank">{{ page.source }}</a></p>
-        {% endif %}
-    </header>
+        </header>
 
-    <div class="post-content" itemprop="articleBody">
-        {{ content }}
-      </div>
-    <div class="comment-content">{% include disqus.html %}</div>
-</article>
+        <div class="post-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+        <div class="comment-content">{% include disqus.html %}</div>
+    </article>
+</div>
