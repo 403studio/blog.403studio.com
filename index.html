@@ -3,24 +3,29 @@ title: 博客
 navid: blog
 layout: default
 ---
-<div class="container">
-    <div class="row">
-        <div>
-            {% for tag in site.tags %}
-                <span>{{tag[0]}}</span>
-            {% endfor %}
-        </div>
-        <div class="home">
-            <h1>Posts</h1>
-            <ul class="list-unstyled">
-                {% for post in site.posts %}
-                    <li>
-                        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-                        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                    </li>
-                {% endfor %}
-            </ul>
-            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-        </div>
-    </div>
+
+<div class="row" id="article-post">  
+    {% for post in site.posts %}
+        <article>
+            <div class="article-meta">
+                <span class="fa fa-book"> <a href="#">{{ post.category }}</a></span>
+                <span class="fa fa-calendar"> {{ post.date | date: "%Y-%m-%d" }}</span>
+            </div>
+            <h1><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h1>
+            <div class="article-flag">
+                {% if post.tags %}
+                    <span class="fa fa-tags"></span>
+                    {% for tag in post.tags %}
+                        <a href="#">{{tag}}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="article-description">
+                {% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+            </div>
+        </article>
+    {% endfor %}
 </div>
+
+<div class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></div>
+
