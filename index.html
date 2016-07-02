@@ -5,26 +5,28 @@ layout: default
 ---
 
 <div class="row" id="article-post">  
-    {% for post in site.posts %}
-        <article>
-            <div class="article-meta">
-                <span class="fa fa-book"> <a href="#">{{ post.categories }}</a></span>
-                <span class="fa fa-calendar"> {{ post.date | date: "%Y-%m-%d" }}</span>
-            </div>
-            <h2><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h2>
-            <div class="article-flag">
-                {% if post.tags %}
-                    <span class="fa fa-tags"></span>
-                    {% for tag in post.tags %}
-                        <a href="#">{{tag}}</a>
-                    {% endfor %}
-                {% endif %}
-            </div>
-            <div class="article-description">
-                {% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-            </div>
-        </article>
-    {% endfor %}
+    <div class="col-md-12">
+        {% for post in site.posts %}
+            <article>
+                <div class="article-meta">
+                    <span class="fa fa-book"> <a href="#">{{ post.categories }}</a></span>
+                    <span class="fa fa-calendar"> {{ post.date | date: "%Y-%m-%d" }}</span>
+                </div>
+                <h2><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h2>
+                <div class="article-flag">
+                    {% if post.tags %}
+                        <span class="fa fa-tags"></span>
+                        {% for tag in post.tags %}
+                            <a href="#">{{tag}}</a>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="article-description">
+                    {% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+                </div>
+            </article>
+        {% endfor %}
+    </div>
 </div>
 
 <div class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></div>
