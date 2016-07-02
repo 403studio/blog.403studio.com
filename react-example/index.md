@@ -1,5 +1,6 @@
 ---
 title: React实例——使用React搭建订单页面
+permalink: index
 date: 2016-07-01
 project: react-example
 excerpt: 学习使用React，本实例没有太多深层次的研究。仅提供本人在学习React中经验，以及个人项目中实际线上使用的一个缩减版本的实例
