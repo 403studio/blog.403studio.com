@@ -19,6 +19,7 @@ excerpt: 使用React搭建订单页面Lesson01，对界面进行模块划分，�
 开发环境搭建可以参考[实例介绍](http://blog.403studio.com/react-example/)，在本实例中我们使用了NPM来安装React，使用Bootstrap提供样式表支持，使用Babel来编译JSX文件。首先我们得让我们的React正常运行起来。
 
 index.html文件如下：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -37,6 +38,7 @@ index.html文件如下：
 ```
 
 src/app.js(**请注意这里不是lib/app.js，我们把文件放在src中经过Babel的自动编译存放到lib文件处，所以在index.html中引用是通过lib/app.js**)文件如下：
+
 ```javascript
 ReactDOM.render(
     <h1>Hello,world</h1>,
