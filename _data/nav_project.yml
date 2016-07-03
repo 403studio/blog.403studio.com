@@ -5,3 +5,7 @@
     title: React实例说明和前期准备
   - link: lesson01
     title: 01-使用React搭建订单页面功能模块划分
+  - link: lesson02
+    title: 02-完善商品组件静态内容布局
+  - link: lesson03
+    title: 03-使用数据填充静态页面
