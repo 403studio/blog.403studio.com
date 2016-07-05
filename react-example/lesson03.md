@@ -3,7 +3,6 @@ title: React实例——使用React搭建订单页面Lesson03使用数据填充�
 link: lesson03
 date: 2016-07-03
 project: react-example
-git: https://github.com/403studio/react-example/lesson03/
 excerpt: 使用React搭建订单页面Lesson03使用数据填充静态页面，使用props,state来对数据进行追踪填充
 ---
 

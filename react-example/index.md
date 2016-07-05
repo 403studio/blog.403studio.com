@@ -22,6 +22,11 @@ excerpt: 学习使用React，本实例没有太多深层次的研究。仅提供
 
 ## 准备工作
 
+本实例的代码同步部署在[GitHub](https://github.com/403studio/react-example),代码中node_modules因为文件较多，没有上传。
+
+* 使用Node的用户可以迁出代码，直接运行`npm install`则可创建好需要的node_modules
+* 为方便起见也可以不使用npm的方式来安装使用React，只需要将主文件index.html对react.js和react-dom.js的引用修改到你自己的地址（官网可以下载或者使用在线CDN）
+
 React开发环境的搭建，只需要引入react.js（React核心）React-dom.js（Dom处理）browser.js（jsx语法解析），至于其他的构建工具可以在正式环境中引入使用。在本实例中将使用Node来安装React，并使用[Babel][Babel]对jsx进行解析（Babel可以理解为Javascript编译器，能够将jsx语法编译成Javascript）。
 
 ```bash

@@ -3,7 +3,6 @@ title: React实例——使用React搭建订单页面Lesson02完善商品组件�
 link: lesson02
 date: 2016-07-03
 project: react-example
-git: https://github.com/403studio/react-example/lesson02/
 excerpt: 使用React搭建订单页面Lesson02，完善商品组件静态内容布局。使用Bootstrap提供样式表支持，用静态数据实现商品组件的布局
 ---
 

@@ -3,7 +3,6 @@ title: React实例——使用React搭建订单页面Lesson01功能模块划分
 link: lesson01
 date: 2016-07-02
 project: react-example
-git: https://github.com/403studio/react-example/lesson01/
 excerpt: 使用React搭建订单页面Lesson01，对界面进行模块划分，构建界面基本框架
 ---
 
