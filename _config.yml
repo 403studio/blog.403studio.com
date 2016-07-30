@@ -34,3 +34,10 @@ defaults:
    layout: "project"
    author: "hao.huang"
    git: "https://github.com/403studio/react-example"
+ -
+  scope:
+   path: "web-technology-stack"
+   type: "pages"
+  values:
+   layout: "project"
+   author: "hao.huang"

@@ -15,3 +15,8 @@
     title: 05-商品列表添加事件响应
   - link: lesson06
     title: 06-订单明细列表处理
+- project: web-technology-stack
+  title: Web开发技术栈
+  items:
+  - link: ecmascript2015
+    title: Web技术栈——ECMAScript2015
