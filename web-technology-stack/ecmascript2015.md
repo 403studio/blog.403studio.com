@@ -21,7 +21,7 @@ ECMAScript2015的正式发布具有里程碑式的意义，它把JavaScript从�
 
 具体怎么使用去Babel官网查看即可。国内就目前来说NodeJS使用率并不高，ECMAScript2015使用率也并不高。在查看国外开源文档时发现，很多NodeJS包都在使用ECMAScript2015了。
 
-**CSS3+ECMAScript2015+HTML5应该成为统一标准模式**
+**CSS3+ECMAScript2015+HTML5应该能成为统一标准模式**
 
 ## 相关资源
 
