@@ -17,6 +17,7 @@ ECMAScript2015的正式发布具有里程碑式的意义，它把JavaScript从�
 当然标准是发布了，但依然有浏览器还没有支持或者说很多人还没把浏览器更新到最新的版本，我们也可以使用编译工具把ECMAScript2015转换成通用的JavaScript。如果读者关注前端新型技术栈的话会了解到很多的构建工具都有此功能，简单的我们使用[Babel][Babel]也可以实现转换功能。
 
 >Babel is a JavaScript compiler.
+
 >Use next generation JavaScript, today.
 
 具体怎么使用去Babel官网查看即可。国内就目前来说NodeJS使用率并不高，ECMAScript2015使用率也并不高。在查看国外开源文档时发现，很多NodeJS包都在使用ECMAScript2015了。

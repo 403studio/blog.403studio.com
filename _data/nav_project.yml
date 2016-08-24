@@ -1,5 +1,6 @@
 - project: react-example
   title: React实例-订单交互界面
+  type: page
   items:
   - link: index
     title: React实例说明和前期准备
@@ -17,6 +18,13 @@
     title: 06-订单明细列表处理
 - project: web-technology-stack
   title: Web开发技术栈
+  type: page
   items:
   - link: ecmascript2015
     title: Web技术栈——ECMAScript2015
+- project: ModernPHP
+  title: 现代新型PHP开发
+  type: post
+  items:
+  - link: /学习资料/ModernPHP/ModernPHP开发之创建自己的Composer
+    title: ModernPHP开发之创建自己的Composer
