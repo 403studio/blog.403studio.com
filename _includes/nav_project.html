@@ -14,7 +14,7 @@
 				{% else %}
 					{% for item in section.items %}
 						<li>
-							<a href="/{{ item.link }}">
+							<a href="{{ item.link | prepend: site.baseurl }}">
 								<span {% if page.permalink == item.link %} class="text-success" {% endif %}>{{ item.title }}</span>
 							</a>
 						</li>
