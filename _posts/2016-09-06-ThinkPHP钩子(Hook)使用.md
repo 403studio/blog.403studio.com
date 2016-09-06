@@ -27,6 +27,7 @@ excerpt: ThinkPHP的钩子允许开发者，在特定的标签位调用定义的
 官网所说的行为就是跟标签位以及Hooks息息相关的，通俗的来说，首先在配置文件中定义标签位所需要执行的类（行为），然后在整个程序执行的代码中在某个位置插入Hooks(及触发标签位执行标签位所对应的行为)。以核心代码自定义的action_begin标签举例来说
 
 * 在/ThinkPHP/Mode/common.php中定义标签对应的行为
+
 ```
     'tags'  =>  array(
         'app_init'     =>  array(
@@ -139,6 +140,7 @@ class ListViewBehavior extends \Think\Behavior
 ### 定义字段信息
 
 当然为无论是上面三个方法中的哪一个，控制器都得先定义字段信息，通过字段定义我们就可以把列表页需要显示的字段针对每个控制器定义出来，例如：
+
 ```
 public $fieldArr = array(
         array('field_name' => '', 'field' => 'id', 'listview' => false, 'editview' => true),
