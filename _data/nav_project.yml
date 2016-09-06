@@ -28,3 +28,9 @@
   items:
   - link: /学习资料/ModernPHP/现代PHP开发之创建自己的Composer
     title: ModernPHP开发之创建自己的Composer
+- project: ThinkPHP
+  title: ThinkPHP学习和开发
+  type: post
+  items:
+  - link: /学习资料/ThinkPHP/ThinkPHP钩子(Hook)使用
+    title: ThinkPHP钩子(Hook)使用
