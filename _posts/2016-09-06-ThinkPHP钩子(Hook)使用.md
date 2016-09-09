@@ -8,6 +8,9 @@ permalink: /:categories/ThinkPHP/:title
 excerpt: ThinkPHP的钩子允许开发者，在特定的标签位调用定义的行为。有什么作用呢，通过Hooks标签位我们可以在特定的位置执行特定的程序。这也就意味着我们可以把一些通用的功能通过标签位来调用执行
 ---
 
+* 目录
+{:toc}
+
 ## 使用背景
 
 最近在做一个小项目（小型店面管理系统）使用了ThinkPHP3.2作为项目的基础框架，里面就涉及了不少列表页面和编辑页面(action分别为list,edit)，写了两个控制器（OrderController、GoodsController）的列表页面就发现问题了
