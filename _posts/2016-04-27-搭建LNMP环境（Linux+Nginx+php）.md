@@ -184,6 +184,9 @@ sudo /etc/nginx/nginx
 * `configure: error: Cannot find OpenSSL's <evp.h>`
 根据提示我们安装openssl libcurl4-openssl libssl-dev即可
 
+* `configure: error: Cannot find OpenSSL's libraries`
+该问题是找不到对应的库文件`ln -s /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib`
+
 ### Nginx和XAMMP共存问题
 
 因为Nginx和Apache都是使用的80端口，所以如果要两者同时使用那么我们就需要将XAMPP的Apahce端口修改掉（这里将修改成8888）。我们找到对应的httpd.conf修改port为8888，使用`/opt/lampp restart`发现Apahce仍然启动不了报错`xampp another web server is already running`
